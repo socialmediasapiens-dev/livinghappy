@@ -1,0 +1,1 @@
+Ti.include("../functions.js");var win=Ti.UI.currentWindow;designWindow(win,"Videos",Ti.App.userbg,!0),createTabGroup(win,0);var aWebView=Ti.UI.createWebView({url:videos_link,width:"100%",top:53,scalesPageToFit:!0,bottom:53});aWebView.addEventListener("load",function(e){Ti.API.info("webview loaded: "+e.url)}),win.add(aWebView);
